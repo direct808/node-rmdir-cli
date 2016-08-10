@@ -1,0 +1,15 @@
+{
+  "name": "rmdir-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@justinc/dir-exists": "^2.0.2"
+  }
+}
