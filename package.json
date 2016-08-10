@@ -1,15 +1,31 @@
 {
   "name": "rmdir-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "rmdir-cli is cross-platform command to recursively delete directories",
+  "keywords": [
+    "rmdir",
+    "remove directory",
+    "delete directory",
+    "cli",
+    "rmdir-cli"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "node index.js test"
   },
-  "keywords": [],
-  "author": "",
+  "bin": "./index.js",
+  "author": "direct808",
   "license": "ISC",
   "dependencies": {
     "@justinc/dir-exists": "^2.0.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/direct808/node-rmdir-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/direct808/node-rmdir-cli/issues"
+  },
+  "homepage": "https://github.com/direct808/node-rmdir-cli#readme"
 }
