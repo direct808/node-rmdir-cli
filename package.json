@@ -1,6 +1,6 @@
 {
   "name": "rmdir-cli",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "rmdir-cli is cross-platform command to recursively delete directories",
   "keywords": [
     "rmdir",

@@ -10,5 +10,5 @@ npm install rmdir-cli -g
 and usage it
 
 ```javascript
-rmdir-sync <dir>
+rmdir-cli <dir>
 ```
