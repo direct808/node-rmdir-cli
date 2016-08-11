@@ -2,7 +2,7 @@ var fs = require('fs');
 var path = require('path');
 var dirExists = require('@justinc/dir-exists').dirExistsSync;
 
-function rmdirSync(dirpath) {
+function rmdir(dirpath) {
 
     if (dirExists(dirpath)) {
         var files = fs.readdirSync(dirpath);
@@ -10,7 +10,7 @@ function rmdirSync(dirpath) {
 
             var curPath = path.join(dirpath, file);
             if (fs.statSync(curPath).isDirectory()) {
-                rmdirSync(curPath);
+                rmdir(curPath);
             } else {
                 console.log(curPath);
                 fs.unlinkSync(curPath);
@@ -20,6 +20,4 @@ function rmdirSync(dirpath) {
     }
 }
 
-if(process.argv[2]){
-    rmdirSync(process.argv[2]);
-}
+module.exports = rmdir;
